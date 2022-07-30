@@ -137,6 +137,12 @@ const GlobalStyle = createGlobalStyle`
                 transition: all 2s ease;
                 transform: scale(1.1) translateY(60px);
             }
+
+                @media (max-width: 480px) {
+                    img {
+                    width: 20rem;
+                }
+            }
         }
 
         .ContainerButtons {
@@ -177,6 +183,14 @@ const GlobalStyle = createGlobalStyle`
                 border: 2px solid #b2df28;
             }
 
+            @media (max-width: 480px) {
+                .btnMore {
+                    top: 5%;
+                    left: 70%;  
+                    background-color: rgb(255,0,255);                  
+                }
+            }
+
             p {
                 display: flex;
                 justify-content: center;
@@ -190,7 +204,6 @@ const GlobalStyle = createGlobalStyle`
                 color: rgb(255,0,255);
                 box-shadow: 0px 0px 10px 2px #b2df28;
                 margin-left: 10px;
-                margin-right: 10px;
                 border-radius: 5px;
             }
         }
